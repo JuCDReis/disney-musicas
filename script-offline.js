@@ -3,11 +3,13 @@ const playPauseButton = document.querySelector("#play-music");
 const check = document.querySelector('#btn-check');
 let resposta = document.getElementById("answer").value;
 let trackName;
+let playTrack;
 let pontos = 0;
-let ptsValendo = 15;
-let chances = 3;
+let ptsValendo = 20;
+let chances = 4;
 let index = 0;
 let contadorMusicas = 0;
+let contadorErros = 0;
 
 const tracks = [
     {   name: "easy on me",
@@ -46,23 +48,42 @@ let isPlaying = false;
 playPauseButton.onclick = () => playPause();
 check.onclick = () => checkAnswer();
 
+function ramdomOrder(array) {
+  for (var i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
 const playPause = () => {
-  trackName = tracks[index].name;
+  playTrack = ramdomOrder(tracks);
+  trackName = playTrack[index].name;
   console.log(trackName);
     if (player.paused) {
       player.play();
       isPlaying = true;
+      chances--;
+      ptsValendo = ptsValendo - 5;
+      console.log(ptsValendo);
       setTimeout(() => {
         player.pause();
         isPlaying = false;
-      }, 5000);
+      }, 1000);
     } else {
       player.pause();
       isPlaying = false;
     }
+
+
+    if (chances == 0) {
+      nextTrack();
+    }
   };
 
 const nextTrack = (type = "next")=>{
+    chances = 4;
+    ptsValendo = 20;
     if ((type == "next" && index + 1 === tracks.length) || type === "init") {
         index = 0;
       } else if (type == "prev" && index === 0) {
@@ -94,8 +115,24 @@ const checkAnswer = () => {
       
     } else {
       console.log('erro');
+      contadorErros++;
+      if (contadorErros == 3) {
+        if (pontos<0) {
+          pontos = 0;
+        }
+        localStorage.setItem("total-pts", pontos);
+          
+            var v_pontuacao = JSON.parse(localStorage.getItem("pontos_jogador")) || [];
+            v_pontuacao.push(pontos);
+            localStorage.setItem("pontos_jogador", JSON.stringify(v_pontuacao));
+          
+            window.location.href = "./end.html";
+      }
+      nextTrack();
     }
   }
+
+  // localStorage.clear();
 
 nextTrack("init");
 document.getElementById("answer").value = "";

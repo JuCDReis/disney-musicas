@@ -24,6 +24,7 @@ jogadores.sort(function(a, b) {
       ranking.innerHTML += `
       <h2><img src="./assets/${j+1}-place.svg"> ${jogadores[j].apelido}: ${jogadores[j].pontuacao} pontos</h2>`
     }
+    console.log(jogadores);
        }
                 
 document.querySelector('#btn-play-again').addEventListener('click', function(){
