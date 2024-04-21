@@ -42,7 +42,7 @@ Esse projeto foi desenvolvido na disciplina **Interfaces Web II**, para aplicar 
 
 Ao final, o jogador é levado a uma página de ranking, onde é exibido o score final, e o ranking de todos os jogadores que jogaram no dispositivo.
 
-
+<a href="https://jucdreis.github.io/disney-musicas/"><strong>Acesse o jogo online »</strong></a>
 
 
 ### Feito com
