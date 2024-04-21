@@ -14,34 +14,64 @@ let contadorErros = 0;
 
 // define the playlist with the tracks
 const tracks = [
-    {   name: "easy on me",
-        artist: "adele",
-        url: "./DIVAS/Adele - Easy On Me (Official Lyric Video).mp3"
+    {   name: "minha intuição",
+        artist: "frozen 2",
+        url: "./tracks/Taryn, AURORA - Minha Intuição (De Frozen 2Lyric Video).mp3"
     },
     {
-        name: "no one",
-        artist: "alicia keys",
-        url: "./DIVAS/Alicia Keys - No One (Official Music Video).mp3"
+        name: "aqui no mar",
+        artist: "a pequena sereia",
+        url: "./tracks/[Instrumental Theme] Under The Sea [The Little Mermaid].mp3"
     },
     {
-        name: "shallow",
-        artist: "lady gaga",
-        url: "./DIVAS/Lady Gaga, Bradley Cooper - Shallow (Lyrics) (A Star Is Born Soundtrack).mp3"
+        name: "noites da arábia",
+        artist: "aladdin",
+        url: "./tracks/Aladdin - Noites da Arábia.mp3"
     },
     {
-        name: "hero",
-        artist: "mariah carey",
-        url: "./DIVAS/Hero - Mariah Carey (Lyric Video) Musicarmonix.mp3"
+        name: "amigo estou aqui",
+        artist: "toy story",
+        url: "./tracks/Amigo estou aqui - Toy Story (Animação com letra).mp3"
     },
     {
-        name: "remedy",
-        artist: "adele",
-        url: "./DIVAS/Remedy - Adele (Lyrics) 🎵.mp3"
+        name: "saber quem sou - parte 2",
+        artist: "moana",
+        url: "./tracks/Any Gabrielly - Saber Quem Sou, segunda parte (De Moana um mar de aventurasCom letra).mp3"
     },
     {
-        name: "lift me up",
-        artist: "rihanna",
-        url: "./DIVAS/Rihanna - Lift Me Up (Lyrics).mp3"
+        name: "un poco loco",
+        artist: "viva a vida é uma festa",
+        url: "./tracks/Arthur Salerno, Leandro Luna - Un Poco Loco (De Viva - A Vida é uma FestaCom letra).mp3"
+    },
+    {
+      name: "hakuna matata",
+      artist: "rei leão",
+      url: "./tracks/Hakuna Matata (from The Lion King).mp3"
+    },
+    {
+    name: "não falamos do bruno",
+    artist: "encanto",
+    url: "./tracks/Lin-Manuel Miranda - We Don't Talk About Bruno (From _Encanto_-Instrumental-Audio Only).mp3"
+    },
+    {
+    name: "married life",
+    artist: "up",
+    url: "./tracks/Michael Giacchino - Married Life (Pixar's Up Soundtrack) [Piano Version].mp3"
+    },
+    {
+      name: "vejo uma porta abrir",
+      artist: "frozen",
+      url: "./tracks/Olavo Cavalheiro Gabi Porto - Vejo Uma Porta Abrir (From Frozen Uma Aventura Congelante).mp3"
+    },
+    {
+      name: "try everything",
+      artist: "zootopia",
+      url: "./tracks/Shakira - Try Everything (Audio).mp3"
+    },
+    {
+      name: "quando minha vida vai começar",
+      artist: "enrolados",
+      url: "./tracks/Sylvia Salustti - Quando a Minha Vida Vai Começar (De Enrolados _Vídeo Oficial).mp3"
     }
 ]
 
