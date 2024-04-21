@@ -89,16 +89,16 @@ Se tiver alguma cugestão para melhora esse projeto, fork esse repositório e cr
 4. Push para a Branch (`git push origin feature/AmazingFeature`)
 5. E faça um Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Voltar ao início</a>)</p>
 
 <!-- CONTACT -->
-## Contact
+## Contato
 
 Julia Reis - reisjulia.dev@gmail.com
 
 Link do Projeto: [https://github.com/JuCDReis/disney-musicas](https://github.com/JuCDReis/disney-musicas)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Voltar ao início</a>)</p>
 
 
 _Desenvolvido por Julia Reis e Ana Carolina Barros, 2024._
