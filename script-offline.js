@@ -1,3 +1,4 @@
+// define the DOM and main variables for the game
 const player = document.querySelector('#player');
 const playPauseButton = document.querySelector("#play-music");
 const check = document.querySelector('#btn-check');
@@ -11,6 +12,7 @@ let index = 0;
 let contadorMusicas = 0;
 let contadorErros = 0;
 
+// define the playlist with the tracks
 const tracks = [
     {   name: "easy on me",
         artist: "adele",
@@ -45,9 +47,11 @@ const tracks = [
 
 let isPlaying = false;
 
+// call the functions to start the game
 playPauseButton.onclick = () => playPause();
 check.onclick = () => checkAnswer();
 
+// function to set the tracks ramdomly
 function ramdomOrder(array) {
   for (var i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -56,6 +60,7 @@ function ramdomOrder(array) {
   return array;
 }
 
+// function to the play button
 const playPause = () => {
   playTrack = ramdomOrder(tracks);
   trackName = playTrack[index].name;
@@ -79,6 +84,7 @@ const playPause = () => {
     }
   };
 
+// function to play the next track
 const nextTrack = (type = "next")=>{
     chances = 4;
     ptsValendo = 20;
@@ -94,6 +100,7 @@ const nextTrack = (type = "next")=>{
       if (type !== "init") playPause();  
 }
 
+// function to check the answer
 const checkAnswer = () => {
     let acerto;
     resposta = document.getElementById("answer").value;
