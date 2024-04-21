@@ -76,12 +76,6 @@ _O download pode ser feito diretmente da página do github, ou clonado localment
 
 <p align="right">(<a href="#readme-top">Voltar ao início</a>)</p>
 
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 <!-- CONTRIBUTING -->
 ## Contribuições
 
