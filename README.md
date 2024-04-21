@@ -42,7 +42,7 @@ Esse projeto foi desenvolvido na disciplina **Interfaces Web II**, para aplicar 
 
 Ao final, o jogador é levado a uma página de ranking, onde é exibido o score final, e o ranking de todos os jogadores que jogaram no dispositivo.
 
-<p align="right">(<a href="#readme-top">Voltar ao início</a>)</p>
+
 
 
 ### Feito com
@@ -56,8 +56,6 @@ O projeto inical desenvolvido em aula utilizava a **API *Web Playback SDK* da Sp
 
 A versão 2.0 apresenta uma opção com as músicas hospedadas localmente, permitindo a modificação facilitada da playlist e o uso Offline do jogo.
 
-
-<p align="right">(<a href="#readme-top">Voltar ao início</a>)</p>
 
 
 
@@ -74,7 +72,6 @@ _O download pode ser feito diretmente da página do github, ou clonado localment
    git clone https://github.com/JuCDReis/disney-musicas.git
    ```
 
-<p align="right">(<a href="#readme-top">Voltar ao início</a>)</p>
 
 <!-- CONTRIBUTING -->
 ## Contribuições
@@ -89,7 +86,6 @@ Se tiver alguma cugestão para melhora esse projeto, fork esse repositório e cr
 4. Push para a Branch (`git push origin feature/AmazingFeature`)
 5. E faça um Pull Request
 
-<p align="right">(<a href="#readme-top">Voltar ao início</a>)</p>
 
 <!-- CONTACT -->
 ## Contato
@@ -98,7 +94,6 @@ Julia Reis - reisjulia.dev@gmail.com
 
 Link do Projeto: [https://github.com/JuCDReis/disney-musicas](https://github.com/JuCDReis/disney-musicas)
 
-<p align="right">(<a href="#readme-top">Voltar ao início</a>)</p>
 
 
 _Desenvolvido por Julia Reis e Ana Carolina Barros, 2024._
