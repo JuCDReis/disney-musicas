@@ -62,7 +62,7 @@ A versão 2.0 apresenta uma opção com as músicas hospedadas localmente, permi
 <!-- GETTING STARTED -->
 ## Como começar
 
-Para instalar e utilizar o jogo localmente, basta fazer o download dess repositório e fazer modificações se desejado.
+Para instalar e utilizar o jogo localmente, basta fazer o download desse repositório e fazer modificações se desejado.
 
 ### Instalação
 
