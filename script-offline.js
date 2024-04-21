@@ -59,13 +59,11 @@ function ramdomOrder(array) {
 const playPause = () => {
   playTrack = ramdomOrder(tracks);
   trackName = playTrack[index].name;
-  console.log(trackName);
     if (player.paused) {
       player.play();
       isPlaying = true;
       chances--;
       ptsValendo = ptsValendo - 5;
-      console.log(ptsValendo);
       setTimeout(() => {
         player.pause();
         isPlaying = false;
@@ -106,15 +104,15 @@ const checkAnswer = () => {
     trackName = trackName.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
     if (resposta === trackName) {
-      console.log("acerto");
       pontos = pontos + ptsValendo;
       document.querySelector(".pontos").innerHTML = `<h2>${pontos}</h2>`;
-      console.log(pontos);
       document.getElementById("answer").value = "";
       nextTrack();
       
     } else {
-      console.log('erro');
+      pontos = pontos - 5; 
+      document.querySelector(".pontos").innerHTML = `<h2>${pontos}</h2>`;
+      
       contadorErros++;
       if (contadorErros == 3) {
         if (pontos<0) {
@@ -131,8 +129,6 @@ const checkAnswer = () => {
       nextTrack();
     }
   }
-
-  // localStorage.clear();
 
 nextTrack("init");
 document.getElementById("answer").value = "";
