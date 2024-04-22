@@ -29,7 +29,7 @@ Esse projeto foi desenvolvido na disciplina **Interfaces Web II**, para aplicar 
 
 ### O jogo funciona da seguinte forma:
 
-* O jogador escohe um nickname (apelido), e inicia o jogo ao pertar o botão *play*.
+* O jogador escohe um nickname (apelido), e inicia o jogo ao apertar o botão *play*.
 
 * A música tocará por 5 segundos com o acerto valendo 15 pontos
  -- *Se necessário, o botão de play pode ser acionado novamente, e o acerto **vale 5 pontos a menos.***
@@ -78,9 +78,9 @@ _O download pode ser feito diretmente da página do github, ou clonado localment
 
 As constribuições são o que torna a comunidade open source tão especial. Suas constribuições serão **muito apreciadas**.
 
-Se tiver alguma cugestão para melhora esse projeto, fork esse repositório e crie um pull request. Muito Obrigada!
+Se tiver alguma sugestão para melhorar esse projeto, faça um fork esse repositório e crie um pull request. Muito Obrigada!
 
-1. Fork o projeto
+1. Faça um fork do projeto
 2. Crie uma nova branch (`git checkout -b feature/AmazingFeature`)
 3. Faça o commit de suas modificações (`git commit -m 'Add some AmazingFeature'`)
 4. Push para a Branch (`git push origin feature/AmazingFeature`)
