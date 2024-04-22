@@ -14,7 +14,7 @@
     <br />
     <a href="https://github.com/JuCDReis">Julia Reis</a>
     ·
-    <a href="#">Ana Carolina Barros</a>
+    <a href="https://github.com/acbarrosz">Ana Carolina Barros</a>
 
   </p>
 

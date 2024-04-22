@@ -30,7 +30,6 @@ for (var j = 0; j < jogadores.length; j++) {
       ranking.innerHTML += `
       <h2><img src="./assets/${j+1}-place.svg"> ${jogadores[j].apelido}: ${jogadores[j].pontuacao} pontos</h2>`
     }
-    console.log(jogadores);
        }
 
 // Add an event listener to the 'Play Again' button that reloads the webpage when clicked
