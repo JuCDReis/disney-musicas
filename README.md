@@ -66,7 +66,7 @@ Para instalar e utilizar o jogo localmente, basta fazer o download desse reposit
 
 ### Instalação
 
-_O download pode ser feito diretmente da página do github, ou clonado localmente utilizando o comando git abaixo_
+_O download pode ser feito diretamente da página do github, ou clonado localmente utilizando o comando git abaixo_
 
    ```sh
    git clone https://github.com/JuCDReis/disney-musicas.git
@@ -76,9 +76,9 @@ _O download pode ser feito diretmente da página do github, ou clonado localment
 <!-- CONTRIBUTING -->
 ## Contribuições
 
-As constribuições são o que torna a comunidade open source tão especial. Suas constribuições serão **muito apreciadas**.
+As contribuições são o que torna a comunidade open source tão especial. Suas contribuições serão **muito apreciadas**.
 
-Se tiver alguma sugestão para melhorar esse projeto, faça um fork esse repositório e crie um pull request. Muito Obrigada!
+Se tiver alguma sugestão para melhorar esse projeto, faça um fork desse repositório e crie um pull request. Muito Obrigada!
 
 1. Faça um fork do projeto
 2. Crie uma nova branch (`git checkout -b feature/AmazingFeature`)
