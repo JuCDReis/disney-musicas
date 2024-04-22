@@ -74,7 +74,7 @@ const tracks = [
       url: "./tracks/Sylvia Salustti - Quando a Minha Vida Vai Começar (De Enrolados _Vídeo Oficial).mp3"
     }
 ]
-
+playTrack = ramdomOrder(tracks);
 let isPlaying = false;
 
 // call the functions to start the game
@@ -92,8 +92,6 @@ function ramdomOrder(array) {
 
 // function to the play button
 const playPause = () => {
-  playTrack = ramdomOrder(tracks);
-  trackName = playTrack[index].name;
     if (player.paused) {
       player.play();
       isPlaying = true;
@@ -102,7 +100,7 @@ const playPause = () => {
       setTimeout(() => {
         player.pause();
         isPlaying = false;
-      }, 1000);
+      }, 5000);
     } else {
       player.pause();
       isPlaying = false;
@@ -117,16 +115,22 @@ const playPause = () => {
 // function to play the next track
 const nextTrack = (type = "next")=>{
     chances = 4;
+    contadorMusicas++;
+    console.log(contadorMusicas)
+    if (contadorMusicas == 12) {
+      gameOver();
+    }
     ptsValendo = 20;
-    if ((type == "next" && index + 1 === tracks.length) || type === "init") {
+    trackName = playTrack[index].artist;
+
+    if ((type == "next" && index + 1 === playTrack.length) || type === "init") {
         index = 0;
       } else if (type == "prev" && index === 0) {
-        index = tracks.length;
+        index = playTrack.length;
       } else {
         index = type === "prev" && index ? index - 1 : index + 1;
       }
-      player.src = tracks[index].url;  
-      contadorMusicas++;
+      player.src = playTrack[index].url;  
       if (type !== "init") playPause();  
 }
 
@@ -136,7 +140,7 @@ const checkAnswer = () => {
     resposta = document.getElementById("answer").value;
     resposta = resposta.toLowerCase();
     resposta = resposta.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    trackName = tracks[index].name;
+    trackName = playTrack[index].artist;
     trackName = trackName.toLowerCase();
     trackName = trackName.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
@@ -152,20 +156,25 @@ const checkAnswer = () => {
       
       contadorErros++;
       if (contadorErros == 3) {
-        if (pontos<0) {
-          pontos = 0;
-        }
-        localStorage.setItem("total-pts", pontos);
-          
-            var v_pontuacao = JSON.parse(localStorage.getItem("pontos_jogador")) || [];
-            v_pontuacao.push(pontos);
-            localStorage.setItem("pontos_jogador", JSON.stringify(v_pontuacao));
-          
-            window.location.href = "./end.html";
+        gameOver();
       }
       nextTrack();
     }
   }
+
+  
+const gameOver = ()=>{
+  if (pontos<0) {
+    pontos = 0;
+  }
+  localStorage.setItem("total-pts", pontos);
+    
+      var v_pontuacao = JSON.parse(localStorage.getItem("pontos_jogador")) || [];
+      v_pontuacao.push(pontos);
+      localStorage.setItem("pontos_jogador", JSON.stringify(v_pontuacao));
+    
+      window.location.href = "./end.html";
+}
 
 nextTrack("init");
 document.getElementById("answer").value = "";
