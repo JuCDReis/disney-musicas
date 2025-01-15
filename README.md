@@ -90,7 +90,7 @@ Se tiver alguma sugestão para melhorar esse projeto, faça um fork desse reposi
 <!-- CONTACT -->
 ## Contato
 
-Julia Reis - reisjulia.dev@gmail.com
+Julia Reis - julia.reisfreela@gmail.com  
 
 Link do Projeto: [https://github.com/JuCDReis/disney-musicas](https://github.com/JuCDReis/disney-musicas)
 
